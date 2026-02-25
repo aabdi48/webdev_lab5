@@ -22,91 +22,25 @@
       <select name="age_field">
         <option>under 18</option>
         <option>over 18</option>
-        
-
-      
-    <fieldset>
-        <legend>Personal Information</legend>
-
-        <p>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name_field" required>
-        </p>
-
-        <p>
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name_field" required>
-        </p>
-
-        <p>
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone_field">
-        </p>
-
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email_field" required>
-        </p>
-    </fieldset>
-
-    <fieldset>
-        <legend>Gender</legend>
-
-        <label>
-            <input type="radio" name="gender_field" value="Male" required> Male
-        </label>
-
-        <label>
-            <input type="radio" name="gender_field" value="Female"> Female
-        </label>
-
-        <label>
-            <input type="radio" name="gender_field" value="Other"> Other
-        </label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Availability</legend>
-
-        <label>
-            <input type="checkbox" name="available_field[]" value="Morning"> Morning
-        </label>
-
-        <label>
-            <input type="checkbox" name="available_field[]" value="Afternoon"> Afternoon
-        </label>
-
-        <label>
-            <input type="checkbox" name="available_field[]" value="Evening"> Evening
-        </label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Age Range</legend>
-
-        <label for="age">Select Age Range:</label>
-        <select id="age" name="age_field" required>
-            <option value="">-- Select One --</option>
-            <option value="18-25">18-25</option>
-            <option value="26-35">26-35</option>
-            <option value="36-45">36-45</option>
-            <option value="46+">46+</option>
         </select>
     </fieldset>
-
     <fieldset>
-        <legend>Comments</legend>
-
-        <label for="comments">Additional Comments:</label><br>
-        <textarea id="comments" name="comments_field" rows="4" cols="40"></textarea>
+      <legend>My Availability</legend>
+      <h3>Days Available:</h3>
+      <div>
+        <div><label>Sunday <input type="checkbox" name="available_field[]" value="sunday"></label></div>
+        <div><label>Monday <input type="checkbox" name="available_field[]" value="monday"></label></div>
+        <div><label>Tuesday <input type="checkbox" name="available_field[]" value="tuesday"></label></div>
+        <div><label>Wednesday <input type="checkbox" name="available_field[]" value="wednesday"></label></div>
+        <div><label>Thursday <input type="checkbox" name="available_field[]" value="thursday"></label></div>
+        <div><label>Friday <input type="checkbox" name="available_field[]" value="friday"></label></div>
+        <div><label>Saturday <input type="checkbox" name="available_field[]" value="saturday"></label></div>
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </div>
     </fieldset>
-
-    <input type="hidden" name="hidden_field" value="Abdullahi Abdi">
-
-    <p>
-        <input type="submit" value="Submit Form">
-    </p>
-
-</form>
+    <input type="hidden" name="hidden_field" value="dkriegls">
+    <input type="submit">
+  </form>
 </body>
 </html>
